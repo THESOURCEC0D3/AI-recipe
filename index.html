@@ -1,47 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Jonathan Precious">
-  <meta name="description" content="A website to find out ingredients, how to make food and the nutritional benefit of the food">
-  <title>Recipe Website</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Mozilla+Headline:wght@200..700&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-</head>
-<body>
-  <header>
-    <h1>AI recipe recommendation</h1>
-  </header>
-
-  <main>
-    <div class="upload-container">
-      <label for="file-upload" class="upload-box" id="uploadBox">
-        
-        <!-- Placeholder text + icon -->
-        <div class="upload-text" id="placeholder">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path d="M12 2L7 7h3v6h4V7h3l-5-5zM5 18v2h14v-2H5z"/>
-          </svg>
-          <p>Click to upload an image</p>
-        </div>
-
-        <!-- Preview image (hidden by default) -->
-        <img id="preview" alt="Preview" hidden>
-
-      </label>
-
-      <!-- Hidden file input -->
-      <input type="file" id="file-upload" accept="image/*" hidden>
-
-      <!-- Remove button (hidden by default) -->
-      <button class="remove-btn" id="removeBtn" hidden>Remove Image</button>
-    </div>
-  </main>
-
-  <script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jonathan Precious" />
+    <meta
+      name="description"
+      content="A website to find out ingredients, how to make food and the nutritional benefit of the food"
+    />
+    <title>Recipe Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Mozilla+Headline:wght@200..700&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="favicon.svg" />
+  </head>
+  <body>
+    <header>
+      <img src="image.svg" alt="icon" />
+      <h3>
+        AI recipe recommendation <br />
+        engine
+      </h3>
+    </header>
+    <main>
+      <!-- <label for="upload" class="custom-file">
+  Upload File
+</label> -->
+      <input type="file" id="upload" />
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>
