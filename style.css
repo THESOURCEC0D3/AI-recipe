@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* CSS HEX */
+--chamoisee: #948561ff;
+--black: #030201ff;
+--battleship-gray: #82796Dff;
+--dun: #E6D3B9ff;
+--black-bean: #430200ff;
+--eerie-black: #1C1914ff;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5em;
+    align-items: center;
+    color:black;
+}
+
+input[type="file"]::file-selector-button {
+  font-family: 'Host Grotesk', sans-serif; /* change font */
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 200px;
+  /* display: block; */
+  /* margin:auto; */
+}
+
