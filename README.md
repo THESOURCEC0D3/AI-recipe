@@ -1,1 +1,1 @@
-## This is an AI recipe recommendation website
+AI recipe generation engine with computer vision + spoontacular API
