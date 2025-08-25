@@ -15,23 +15,20 @@
 }
 
 header{
-    display: flex;
-    justify-content: space-around;
-    padding: 0.5em;
-    align-items: center;
-    color:black;
+    font-family: 'Host Grotesk', sans-serif;
+    text-align: center;
+    margin-top: 300px;
 }
 
-input[type="file"]::file-selector-button {
-  font-family: 'Host Grotesk', sans-serif; /* change font */
-  font-size: 14px;
-  font-weight: bold;
-  border: none;
-  padding: 0.5em 1em;
-  border-radius: 6px;
-  cursor: pointer;
-  width: 200px;
-  /* display: block; */
-  /* margin:auto; */
-}
 
+  #upload {
+    display: block;
+    margin-top: 28px;
+    font-family: 'Host Grotesk', sans-serifs;
+    margin-left: 550px;
+    cursor: pointer;
+  }
+
+  ::-webkit-scrollbar{
+    display: none;
+  }
