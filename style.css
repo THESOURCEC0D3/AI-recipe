@@ -14,24 +14,74 @@
 --eerie-black: #1C1914ff;
 }
 
+body{
+    font-family: 'Host Grotesk', sans-serif;
+}
+
 header{
-    display: flex;
-    justify-content: space-around;
-    padding: 0.5em;
-    align-items: center;
+    text-align: center;
+    margin-top: 10em;
     color:black;
 }
 
-input[type="file"]::file-selector-button {
-  font-family: 'Host Grotesk', sans-serif; /* change font */
-  font-size: 14px;
-  font-weight: bold;
-  border: none;
-  padding: 0.5em 1em;
-  border-radius: 6px;
+ .upload-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px; /* spacing between box and button */
+    }
+    .upload-box {
+  width: 300px;
+  height: 200px;
+  border: 2px dashed #948561;
+  border-radius: 10px;
+  display: flex;              /* ✅ flexbox to center content */
+  align-items: center;        /* vertical center */
+  justify-content: center;    /* horizontal center */
   cursor: pointer;
-  width: 200px;
-  /* display: block; */
-  /* margin:auto; */
+  transition: 0.3s ease;
+  background: #f9f9f9;
+  position: relative;
+  overflow: hidden;
+  margin: auto;
 }
 
+    #file-upload {
+      display: none; /* hide default input */
+    }
+
+   .upload-box img {
+  max-width: 100%;    /* image shrinks if too wide */
+  max-height: 100%;   /* image shrinks if too tall */
+  object-fit: contain; /* ✅ fit fully inside */
+  border-radius: 10px;
+  display: block;
+   }
+
+
+    .upload-text {
+      text-align: center;
+      color: #948561;
+    }
+
+    .upload-text svg {
+      width: 40px;
+      height: 40px;
+      margin-bottom: 10px;
+      fill: #948561;
+    }
+
+        .remove-btn {
+      padding: 6px 12px;
+      border: none;
+      border-radius: 6px;
+      background: #b63b3b;
+      color: white;
+      font-size: 14px;
+      cursor: pointer;
+      display: none; /* hidden until image is uploaded */
+    }
+
+    .remove-btn:hover {
+      background: #a12f2f;
+    }

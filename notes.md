@@ -176,3 +176,17 @@ const observer = new IntersectionObserver(
 document.querySelectorAll(".slide-in-left, .slide-in-right").forEach((el) => {
   observer.observe(el);
 });
+
+
+/* input[type="file"]::file-selector-button {
+  font-family: 'Host Grotesk', sans-serif; /* change font */
+  /* font-size: 14px;
+  font-weight: bold;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 200px; */
+  /* display: block; */
+  /* margin:auto; */
+/* } */ */
